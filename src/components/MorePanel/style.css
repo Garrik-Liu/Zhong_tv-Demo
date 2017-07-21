@@ -1,0 +1,9 @@
+.component-MorePanel {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.component-MorePanel .component-ShowPanel {
+    padding-top: 70px;
+}

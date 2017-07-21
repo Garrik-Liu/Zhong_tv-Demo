@@ -1,0 +1,91 @@
+.component-SlideShow {
+    height: 500px;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+
+.component-SlideShow__slides {
+    position: relative;
+    height: inherit;
+}
+
+.component-SlideShow__slide {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    height: inherit;
+    animation: slideShow 0.6s;
+}
+
+@keyframes slideShow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.component-SlideShow__slide img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.prev-next-group {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.prev-next-group:hover {
+    opacity: 1;
+}
+
+.component-SlideShow__prev, .component-SlideShow__next {
+    cursor: pointer;
+    padding: 16px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s ease;
+    opacity: 0.6;
+    user-select: none;
+}
+
+.component-SlideShow__prev:hover, .component-SlideShow__next:hover {
+    opacity: 1;
+}
+
+.component-SlideShow__prev {
+    left: 0;
+}
+
+.component-SlideShow__next {
+    right: 0;
+}
+
+.component-SlideShow__link {
+    display: inline-block;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.component-SlideShow__describe {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    background-color: #000;
+    opacity: 0.8;
+}
+

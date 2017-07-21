@@ -1,0 +1,36 @@
+.component-ActivityItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.component-ActivityItem__image {
+    flex: 0 0 35%;
+    margin-right: 10px;
+}
+
+.component-ActivityItem__image a {
+    display: block;
+    font-size: 0;
+}
+
+.component-ActivityItem__image img {
+    width: 100%;
+}
+
+.component-ActivityItem__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.component-ActivityItem__detail h2 {
+    font-size: 1em;
+}
+
+.component-ActivityItem__detail .wordBlock {
+    font-size: 0.8em;
+    color: #666;
+    margin: 5px 0;
+}

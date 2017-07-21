@@ -1,0 +1,89 @@
+.component-Header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.component-Header .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.component-Header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80px;
+}
+
+.component-Header__logo img {
+    width: 100%;
+}
+
+.component-Header__logo-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.component-Header__iconLinks {
+    position: relative;
+}
+
+.component-Header__iconLinks ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 50px;
+}
+
+.component-Header__iconLinks ul li {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.component-Header__iconLinks ul li a {
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+}
+
+.component-Header__iconLinks ul li img {
+    height: 20px;
+}
+
+.component-Header__nav {
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.component-Header__nav li {
+    height: 100%;
+}
+
+.component-Header__nav li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.component-Header__nav li a:hover {
+    color: #db3f8d;
+    border-bottom: 5px solid #db3f8d;
+}

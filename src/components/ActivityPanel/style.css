@@ -1,0 +1,79 @@
+.component-ActivityPanel {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.component-ActivityPanel__header {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.component-ActivityPanel__header img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -500px;
+    z-index: 0;
+}
+
+.component-ActivityPanel__header h1 {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    top: 40%;
+}
+
+.component-ActivityPanel__list {
+
+}
+
+.component-ActivityPanel__SearchBar {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.component-ActivityPanel__SearchBar__form {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.component-ActivityPanel__SearchBar__enter {
+    border: none;
+    width: 400px;
+    outline: none;
+    padding: 3px;
+    font-size: 18px;
+    border-top: 2px solid #db3f8d;
+    border-bottom: 2px solid #db3f8d;
+    border-right: 2px solid #db3f8d;
+}
+
+.component-ActivityPanel__SearchBar__search {
+    cursor: pointer;
+    line-height: 40px;
+    width: 60px;
+    background-color: #db3f8d;
+    color: #fff;
+}
+
+.component-ActivityPanel__SearchBar__search:hover {
+    background-color: #e567a6;
+}
+
+.component-ActivityPanel__SearchBar__select {
+    width: 60px;
+    border: 2px solid #db3f8d;
+    border-radius: 0px;
+    appearance: none;
+    outline: none;
+    text-align: center;
+    padding-left: 13px;
+    font-size: 15px;
+    background-color: #db3f8d;
+    color: #fff;
+}

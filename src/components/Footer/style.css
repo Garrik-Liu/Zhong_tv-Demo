@@ -1,0 +1,13 @@
+.component-Footer {
+    height: 50px;
+    width: 100%;
+    background-color: #db3f8d;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+

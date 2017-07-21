@@ -1,0 +1,77 @@
+.component-ShowPanel {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.component-ShowPanel__header {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.component-ShowPanel__header img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -500px;
+    z-index: 0;
+}
+
+.component-ShowPanel__header h1 {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    top: 40%;
+}
+
+.component-ShowPanel__itemList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.component-ShowPanel__itemList .component-ShowItem {
+    flex: 0 0 25%;
+}
+
+.component-ShowPanel__moreBtn {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.component-ShowPanel__moreBtn a {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #db3f8d;
+    font-size: 12px;
+}
+
+.component-ShowPanel__moreBtn a .downArrow {
+    opacity: 0;
+    position: relative;
+    color: #db3f8d;
+}
+
+.component-ShowPanel__moreBtn a:hover .downArrow {
+    opacity: 1;
+    animation: arrowDown 0.4s ease forwards;
+}
+
+@keyframes arrowDown {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 5px;
+    }
+}
